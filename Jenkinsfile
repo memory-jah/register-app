@@ -19,12 +19,13 @@ pipeline {
 
           stage ("Build Application"){
                   Steps {
-                  sh "mvn clean package"
+                      sh "mvn clean package"
                   }
           }
 
           stage ("Test Application"){
-                  steps { sh "mvn test"
+                  steps { 
+                      sh "mvn test"
                   }
           }   
     }
